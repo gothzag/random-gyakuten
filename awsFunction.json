@@ -4,13 +4,9 @@ var randomWright = function(params) {
 		bucket: "randomgs",
 		path: "wright/",
 		awsRegion: "us-east-2",
-		container: ".random-image"
 	}, params);
 
-	if (options.bucket !== null && options.path !== null) {
-
-
-		var renderImage = function(bucket, path, container) {
+		var renderImage = function(bucket, path) {
 
 			var url = "https://randomgs.s3.us-east-2.amazonaws.com/" + path + "?delimiter=%2F&encoding-type=url&marker=&max-keys=1000&prefix=" + encodeURI(path);
 
@@ -35,7 +31,6 @@ var randomWright = function(params) {
 
 					var random = Math.floor((Math.random() * d.length));
 						var randomWright = "<img src='/" + d[random]+ "' alt='' class='random-image random" + random + "' />";
-						$(container).append(randomWright);
 
 
 				} else {
@@ -49,7 +44,7 @@ var randomWright = function(params) {
 
 		};
 
-		renderImage(options.bucket, options.path, options.container);
+		renderImage(options.bucket, options.path);
 
 	} else {
 		console.log('please define parameters bucket, path like {bucket: "my.bucket.com", path: "random/images/"}');
