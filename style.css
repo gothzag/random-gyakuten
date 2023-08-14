@@ -5,7 +5,6 @@ h1 {
   text-align: center;
   font-size: 10vmin;
   color: #b9dffd;
-  text-decoration: #fc93b8 wavy underline;
   line-height: 1.1;
 }
 
@@ -14,7 +13,7 @@ h2 {
   font-size: 20px;
   line-height: 1.5;
   text-align: center;
-  color: #fc93b8;
+  color: #b9dffd;
 }
 
 h3 {
@@ -39,7 +38,25 @@ a {
   font-style: italic;
   line-height: 0.8;
   text-align: center;
-  color: #fc93b8;
+  color: #b9dffd;
+}
+blue {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: bold;
+  font-style: italic;
+  text-align: center;
+  font-size: 10vmin;
+  color: #4094d5;
+  line-height: 1.1;
+}
+red {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-style: bold;
+  font-style: italic;
+  text-align: center;
+  font-size: 10vmin;
+  color: #f75771;
+  line-height: 1.1;
 }
 @media screen and (min-width: 40em) {
   body {
@@ -76,7 +93,7 @@ el {
   margin-top: 10px;
   border-radius: 10px;
   border: 3;
-  border-color: #fc93b8;
+  border-color: #131314;
   text-align: center;
 }
 
