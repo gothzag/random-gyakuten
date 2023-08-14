@@ -13,7 +13,7 @@ h2 {
   font-size: 20px;
   line-height: 1.5;
   text-align: center;
-  color: #b9dffd;
+  color: #f75771;
 }
 
 h3 {
@@ -47,13 +47,6 @@ blue {
   text-align: center;
   font-size: 10vmin;
   color: #4094d5;
-}
-red {
-  font-family: "IBM Plex Mono", monospaced;
-  font-size: 20px;
-  line-height: 1.5;
-  text-align: center;
-  color: #f75771;
 }
 @media screen and (min-width: 40em) {
   body {
